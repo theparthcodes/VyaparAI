@@ -1,2 +1,10 @@
+import streamlit as st
+import pandas as pd
+
 def show_dashboard():
-    pass
+
+    st.header("Dashboard")
+
+    df = pd.read_csv("data.csv")
+    st.dataframe(df)
+    

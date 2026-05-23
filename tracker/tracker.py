@@ -23,6 +23,7 @@ def show_tracker():
     # =====================================================
 
     df = st.session_state["df"]
+    df.to_csv("data.csv", index=False)
 
     # =====================================================
     # BUSINESS NAME
